@@ -12,6 +12,8 @@ public interface ConsoleClientFace {
 
     void getObserverList(String[] params) throws IOException;
 
+    void getLightList(String[] params) throws IOException;
+
     void getSealerList(String[] params) throws IOException;
 
     void getConsensusStatus(String[] params) throws IOException;

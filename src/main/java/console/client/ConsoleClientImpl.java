@@ -74,6 +74,16 @@ public class ConsoleClientImpl implements ConsoleClientFace {
     }
 
     @Override
+    public void getLightList(String[] params) throws IOException {
+        String lights = client.getLightList().getLightList().toString();
+        if ("[]".equals(lights)) {
+            System.out.println("[]");
+        } else {
+            ConsoleUtils.printJson(lights);
+        }
+    }
+
+    @Override
     public void getSealerList(String[] params) throws IOException {
         String sealers = client.getSealerList().getSealerList().toString();
         if ("[]".equals(sealers)) {

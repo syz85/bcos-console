@@ -90,6 +90,11 @@ public class HelpInfo {
         System.out.println("Usage: \ngetObserverList");
     }
 
+    public static void getLightListHelp() {
+        System.out.println("Query nodeId list for light nodes.");
+        System.out.println("Usage: \ngetLightList");
+    }
+
     public static void getSealerListHelp() {
         System.out.println("Query nodeId list for sealer nodes.");
         System.out.println("Usage: \ngetSealerList");

@@ -1263,6 +1263,23 @@ public class SupportedCommand {
                             consoleInitializer.getConsoleClientFace().getObserverList(params);
                         }
                     });
+    public static final CommandInfo GET_LIGHT_LIST =
+            new CommandInfo(
+                    "getLightList",
+                    "Query nodeId list for light nodes.",
+                    new CommandInfo.UsageDisplay() {
+                        @Override
+                        public void printUsageInfo() {
+                            HelpInfo.getLightListHelp();
+                        }
+                    },
+                    new CommandInfo.CommandImplement() {
+                        @Override
+                        public void call(ConsoleInitializer consoleInitializer, String[] params)
+                                throws Exception {
+                            consoleInitializer.getConsoleClientFace().getLightList(params);
+                        }
+                    });
     public static final CommandInfo GET_CONSENSUS_STATUS =
             new CommandInfo(
                     "getConsensusStatus",
