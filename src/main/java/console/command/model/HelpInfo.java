@@ -338,6 +338,12 @@ public class HelpInfo {
         System.out.println("* nodeId -- The nodeId of a node.");
     }
 
+    public static void addLightHelp() {
+        System.out.println("Add an light node.");
+        System.out.println("Usage: \naddLight nodeId");
+        System.out.println("* nodeId -- The nodeId of a node.");
+    }
+
     public static void addSealerHelp() {
         System.out.println("Add a sealer node.");
         System.out.println("Usage: \naddSealer nodeId");

@@ -79,6 +79,16 @@ public class PrecompiledImpl implements PrecompiledFace {
     }
 
     @Override
+    public void addLight(String[] params) throws Exception {
+        String nodeId = params[1];
+        if (nodeId.length() != 128) {
+            ConsoleUtils.printJson(PrecompiledRetCode.CODE_INVALID_NODEID.toString());
+        } else {
+            ConsoleUtils.printJson(this.consensusService.addLight(nodeId).toString());
+        }
+    }
+
+    @Override
     public void removeNode(String[] params) throws Exception {
         String nodeId = params[1];
         if (nodeId.length() != 128) {

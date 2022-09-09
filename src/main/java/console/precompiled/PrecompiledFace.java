@@ -6,6 +6,8 @@ public interface PrecompiledFace {
 
     void addObserver(String[] params) throws Exception;
 
+    void addLight(String[] params) throws Exception;
+
     void removeNode(String[] params) throws Exception;
 
     // SystemConfigPrecompiled

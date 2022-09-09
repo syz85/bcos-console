@@ -806,6 +806,25 @@ public class SupportedCommand {
                     },
                     1,
                     1);
+    public static final CommandInfo ADDLIGHT =
+            new CommandInfo(
+                    "addLight",
+                    "Add an light node",
+                    new CommandInfo.UsageDisplay() {
+                        @Override
+                        public void printUsageInfo() {
+                            HelpInfo.addLightHelp();
+                        }
+                    },
+                    new CommandInfo.CommandImplement() {
+                        @Override
+                        public void call(ConsoleInitializer consoleInitializer, String[] params)
+                                throws Exception {
+                            consoleInitializer.getPrecompiledFace().addLight(params);
+                        }
+                    },
+                    1,
+                    1);
     public static final CommandInfo ADDSEALER =
             new CommandInfo(
                     "addSealer",
