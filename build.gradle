@@ -30,7 +30,7 @@ googleJavaFormat {
 dependencies {
     compile 'commons-io:commons-io:2.12.0'
     compile 'com.moandjiezana.toml:toml4j:0.7.2'
-    compile 'io.netty:netty-all:4.1.93.Final'
+    compile 'io.netty:netty-all:4.1.53.Final'
     compile 'org.fisco-bcos:solcJ:0.4.25.1'
     //compile 'org.fisco-bcos:solcJ:0.6.10.3-SNAPSHOT'
     //compile 'org.fisco-bcos:solcJ:0.5.2.3-SNAPSHTOT'
